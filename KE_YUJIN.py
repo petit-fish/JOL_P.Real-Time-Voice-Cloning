@@ -4,8 +4,7 @@ from pygame import mixer
 import speech_recognition as sr
 from googletrans import Translator
 r=sr.Recognizer()
-path=input("영어로 번역,더빙하고 싶은 한국어 음성 경로를 입력하세요. (mp3, " \
-                      "wav, m4a, flac, ...):\n")
+path='/content/output/test/vocals.wav'
 Yujin=sr.AudioFile(path)
 with Yujin as source:
     audio=r.record(source)
